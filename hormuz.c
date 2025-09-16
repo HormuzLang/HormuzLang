@@ -66,10 +66,12 @@ struct Map { const char *p; const char *c; };
 
 static struct Map keyword_map[] = {
     {"اگر", "if"},
+    {"جاپ", "printf"},
     {"وگرنه", "else"},
     {"برای", "for"},
     {"درحالی که", "while"},
-    {"تابع", "void"},    // simplified: Persian "تابع" → "void"
+    {"اشاره", "void*"},
+    {"تابع", "void"},
     {"بازگردان", "return"},
     {"صحیح", "int"},
     {"اعشاری", "double"},
@@ -132,7 +134,7 @@ static char *read_number(void) {
 }
 
 static char *read_string(void) {
-    pos++; // skip opening "
+    pos++;
     size_t start = pos;
     while (src[pos] && src[pos] != '"') {
         if (src[pos] == '\\' && src[pos+1]) pos += 2;
