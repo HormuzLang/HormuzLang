@@ -1,5 +1,6 @@
 <div dir="rtl">
 
+![زبان برنامه‌نویسی هرمز (Hormuz Programming Language](logo.png)
 # زبان برنامه‌نویسی هرمز (Hormuz Programming Language)
 
 **هرمز** یک زبان برنامه‌نویسی ساده، ایرانی و فارسی‌محور است که به صورت مستقیم از روی دستورات فارسی به زبان C ترجمه (Transpile) می‌شود.  
